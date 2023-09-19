@@ -1,0 +1,5 @@
+{
+    "exact":[],
+    "wild": ["boost", "nitro", "b0ost", "n1tro", "n1tr0", "b00st", "rewards", "reward", "bo0st"],
+    "autoban": []
+}

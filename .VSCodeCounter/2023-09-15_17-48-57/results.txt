@@ -1,0 +1,323 @@
+Date : 2023-09-15 17:48:57
+Directory : c:\Users\Phil\Desktop\zazie bot
+Total : 271 files,  42530 codes, 6858 comments, 6141 blanks, all 55529 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |        256 |     29,513 |      6,858 |      6,086 |     42,457 |
+| JSON       |         13 |     13,013 |          0 |         55 |     13,068 |
+| YAML       |          1 |          3 |          0 |          0 |          3 |
+| HTML       |          1 |          1 |          0 |          0 |          1 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                     | files      | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                        |        271 |     42,530 |      6,858 |      6,141 |     55,529 |
+| . (Files)                                                                |         20 |     15,077 |      2,304 |        451 |     17,832 |
+| Collection                                                               |          1 |          3 |          0 |          2 |          5 |
+| commands                                                                 |        153 |     22,977 |        157 |      4,485 |     27,619 |
+| commands\antiraid                                                        |          3 |        260 |          0 |         70 |        330 |
+| commands\config                                                          |         11 |      1,079 |          9 |        132 |      1,220 |
+| commands\core                                                            |          5 |        355 |         23 |         47 |        425 |
+| commands\economy                                                         |         38 |     14,441 |         33 |      2,715 |     17,189 |
+| commands\fun                                                             |         50 |      3,237 |          2 |        437 |      3,676 |
+| commands\infos                                                           |          5 |         89 |          3 |         30 |        122 |
+| commands\invites                                                         |          2 |        158 |          2 |          6 |        166 |
+| commands\marriage                                                        |         11 |      1,653 |         44 |        732 |      2,429 |
+| commands\messages                                                        |          3 |        475 |         16 |         85 |        576 |
+| commands\moderation                                                      |          8 |        429 |         14 |         89 |        532 |
+| commands\utility                                                         |         17 |        801 |         11 |        142 |        954 |
+| config                                                                   |          1 |         14 |          0 |          2 |         16 |
+| database                                                                 |          5 |         58 |          0 |          3 |         61 |
+| dontwork                                                                 |         51 |      3,231 |        671 |        886 |      4,788 |
+| dontwork (Files)                                                         |         25 |      2,821 |        669 |        784 |      4,274 |
+| dontwork\music                                                           |         15 |        333 |          0 |         98 |        431 |
+| dontwork\player                                                          |         11 |         77 |          2 |          4 |         83 |
+| events                                                                   |          4 |      1,094 |        360 |        291 |      1,745 |
+| giveaways                                                                |          7 |          0 |        754 |          0 |        754 |
+| moderation(not working)                                                  |         20 |          0 |      2,610 |          1 |      2,611 |
+| schemas                                                                  |          6 |         47 |          2 |         14 |         63 |
+| structures                                                               |          3 |         29 |          0 |          6 |         35 |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                 | language   | code       | comment    | blank      | total      |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Users\Phil\Desktop\zazie bot\Collection\index.js                      | JavaScript |          3 |          0 |          2 |          5 |
+| c:\Users\Phil\Desktop\zazie bot\Error.js                                 | JavaScript |          7 |          0 |          1 |          8 |
+| c:\Users\Phil\Desktop\zazie bot\ExtendedMessage.js                       | JavaScript |         25 |          0 |          4 |         29 |
+| c:\Users\Phil\Desktop\zazie bot\bot-api.ejs                              | HTML       |          1 |          0 |          0 |          1 |
+| c:\Users\Phil\Desktop\zazie bot\botconfig.json                           | JSON       |         50 |          0 |         47 |         97 |
+| c:\Users\Phil\Desktop\zazie bot\commands\antiraid\config.js              | JavaScript |        147 |          0 |         46 |        193 |
+| c:\Users\Phil\Desktop\zazie bot\commands\antiraid\unbanall.js            | JavaScript |         23 |          0 |          1 |         24 |
+| c:\Users\Phil\Desktop\zazie bot\commands\antiraid\whitelist.js           | JavaScript |         90 |          0 |         23 |        113 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\disableinvitechannel.js  | JavaScript |         21 |          1 |          5 |         27 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\disableleavechannel.js   | JavaScript |         21 |          1 |          5 |         27 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\disablewelcome.js        | JavaScript |         21 |          1 |          5 |         27 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\modsettings.js           | JavaScript |         37 |          1 |          1 |         39 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\setinvitechannel.js      | JavaScript |        154 |          1 |         10 |        165 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\setinvitemessage.js      | JavaScript |        157 |          1 |          7 |        165 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\setmessagechannel.js     | JavaScript |        110 |          1 |          5 |        116 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\setstrikechannel.js      | JavaScript |        110 |          1 |          5 |        116 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\setupmoderation.js       | JavaScript |        234 |          1 |         79 |        314 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\setwelcomechannel.js     | JavaScript |        110 |          0 |          4 |        114 |
+| c:\Users\Phil\Desktop\zazie bot\commands\config\setwelcomemessage.js     | JavaScript |        104 |          0 |          6 |        110 |
+| c:\Users\Phil\Desktop\zazie bot\commands\core\listen.js                  | JavaScript |         31 |          0 |          5 |         36 |
+| c:\Users\Phil\Desktop\zazie bot\commands\core\mainhelp.js                | JavaScript |        235 |         23 |         26 |        284 |
+| c:\Users\Phil\Desktop\zazie bot\commands\core\playing.js                 | JavaScript |         27 |          0 |          4 |         31 |
+| c:\Users\Phil\Desktop\zazie bot\commands\core\stream.js                  | JavaScript |         28 |          0 |          5 |         33 |
+| c:\Users\Phil\Desktop\zazie bot\commands\core\watch.js                   | JavaScript |         34 |          0 |          7 |         41 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\bal.js                  | JavaScript |         48 |          0 |         11 |         59 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\banklb.js               | JavaScript |         66 |          0 |         17 |         83 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\bankrob.js              | JavaScript |        283 |          0 |         52 |        335 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\beg.js                  | JavaScript |         64 |          0 |         12 |         76 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\buy.js                  | JavaScript |        647 |          0 |        202 |        849 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\changedegree.js         | JavaScript |         56 |          0 |         12 |         68 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\changejob.js            | JavaScript |         55 |          0 |         12 |         67 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\cutlock.js              | JavaScript |         96 |          0 |         24 |        120 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\daily.js                | JavaScript |         47 |          0 |         10 |         57 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\degree.js               | JavaScript |        564 |          0 |        127 |        691 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\degreeprogress.js       | JavaScript |        129 |          0 |         28 |        157 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\dep.js                  | JavaScript |        117 |          2 |         23 |        142 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\dig.js                  | JavaScript |        745 |          0 |        100 |        845 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\fish.js                 | JavaScript |        166 |          0 |         29 |        195 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\gamble.js               | JavaScript |        168 |          0 |         38 |        206 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\give.js                 | JavaScript |        107 |         25 |         28 |        160 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\guess.js                | JavaScript |         86 |          0 |         13 |         99 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\hunt.js                 | JavaScript |        206 |          0 |         35 |        241 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\inv.js                  | JavaScript |        250 |          0 |         49 |        299 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\item.js                 | JavaScript |        105 |          0 |         14 |        119 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\job.js                  | JavaScript |      1,699 |          0 |        327 |      2,026 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\leaderboard.js          | JavaScript |         66 |          0 |         17 |         83 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\learn.js                | JavaScript |      2,606 |          0 |        461 |      3,067 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\removelock.js           | JavaScript |         51 |          0 |          9 |         60 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\removesquirelock.js     | JavaScript |         51 |          0 |          9 |         60 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\rob.js                  | JavaScript |      1,820 |          0 |        269 |      2,089 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\robux.js                | JavaScript |         40 |          0 |          8 |         48 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\search.js               | JavaScript |      1,685 |          0 |        226 |      1,911 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\sell.js                 | JavaScript |        973 |          1 |        174 |      1,148 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\sellableitems.js        | JavaScript |         33 |          0 |          8 |         41 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\shop.js                 | JavaScript |        122 |          1 |         25 |        148 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\slots.js                | JavaScript |        116 |          2 |         40 |        158 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\steal.js                | JavaScript |         52 |          0 |         15 |         67 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\takepicture.js          | JavaScript |        625 |          0 |        186 |        811 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\use.js                  | JavaScript |         80 |          0 |          7 |         87 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\walletlb.js             | JavaScript |         66 |          0 |         17 |         83 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\with.js                 | JavaScript |        117 |          2 |         23 |        142 |
+| c:\Users\Phil\Desktop\zazie bot\commands\economy\work.js                 | JavaScript |        234 |          0 |         58 |        292 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\8ball.js                    | JavaScript |         42 |          0 |          6 |         48 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\adopted.js                  | JavaScript |         87 |          0 |         17 |        104 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\advice.js                   | JavaScript |         17 |          0 |          1 |         18 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\akinator.js                 | JavaScript |         11 |          0 |          1 |         12 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\alignment.js                | JavaScript |         20 |          0 |          3 |         23 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\anime.js                    | JavaScript |         33 |          0 |          3 |         36 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\art.js                      | JavaScript |         31 |          0 |          2 |         33 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\bite.js                     | JavaScript |         68 |          0 |         15 |         83 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\blur.js                     | JavaScript |        109 |          0 |          4 |        113 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\blush.js                    | JavaScript |         79 |          0 |         22 |        101 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\cat.js                      | JavaScript |         33 |          0 |          3 |         36 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\clap.js                     | JavaScript |         51 |          0 |          9 |         60 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\comment.js                  | JavaScript |         69 |          0 |          2 |         71 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\country.js                  | JavaScript |         75 |          0 |          5 |         80 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\cry.js                      | JavaScript |         72 |          0 |          9 |         81 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\cuddle.js                   | JavaScript |        103 |          0 |          9 |        112 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\dance.js                    | JavaScript |         79 |          0 |         21 |        100 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\dog.js                      | JavaScript |         33 |          0 |          3 |         36 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\facepalm.js                 | JavaScript |         75 |          0 |         18 |         93 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\glare.js                    | JavaScript |         79 |          0 |         20 |         99 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\glass.js                    | JavaScript |         48 |          0 |          2 |         50 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\greyscale.js                | JavaScript |         51 |          0 |          3 |         54 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\hug.js                      | JavaScript |        104 |          0 |         12 |        116 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\invert.js                   | JavaScript |         51 |          0 |          3 |         54 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\joke.js                     | JavaScript |         22 |          0 |          2 |         24 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\kill.js                     | JavaScript |         95 |          0 |          9 |        104 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\kiss.js                     | JavaScript |        108 |          0 |         14 |        122 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\laugh.js                    | JavaScript |         76 |          0 |         15 |         91 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\mcskin.js                   | JavaScript |         45 |          0 |          7 |         52 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\ok.js                       | JavaScript |         77 |          0 |         25 |        102 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\pat.js                      | JavaScript |         92 |          0 |         15 |        107 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\pixelate.js                 | JavaScript |        108 |          0 |          3 |        111 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\poke.js                     | JavaScript |         92 |          0 |         16 |        108 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\poker.js                    | JavaScript |         48 |          0 |         16 |         64 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\posterize.js                | JavaScript |        108 |          0 |          3 |        111 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\punch.js                    | JavaScript |        100 |          0 |         10 |        110 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\rainbow.js                  | JavaScript |         48 |          0 |          2 |         50 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\rate.js                     | JavaScript |         49 |          2 |          5 |         56 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\respect.js                  | JavaScript |         10 |          0 |          1 |         11 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\roll.js                     | JavaScript |         96 |          0 |          7 |        103 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\say.js                      | JavaScript |         31 |          0 |         14 |         45 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\sepia.js                    | JavaScript |         51 |          0 |          3 |         54 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\shoot.js                    | JavaScript |         92 |          0 |         17 |        109 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\slap.js                     | JavaScript |        104 |          0 |         11 |        115 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\smile.js                    | JavaScript |         79 |          0 |         21 |        100 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\sphere.js                   | JavaScript |         93 |          0 |          8 |        101 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\topic.js                    | JavaScript |         10 |          0 |          2 |         12 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\triggered.js                | JavaScript |         48 |          0 |          2 |         50 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\wasted.js                   | JavaScript |         48 |          0 |          2 |         50 |
+| c:\Users\Phil\Desktop\zazie bot\commands\fun\willsmith.js                | JavaScript |         87 |          0 |         14 |        101 |
+| c:\Users\Phil\Desktop\zazie bot\commands\infos\contact.js                | JavaScript |         22 |          1 |          9 |         32 |
+| c:\Users\Phil\Desktop\zazie bot\commands\infos\credit.js                 | JavaScript |         22 |          1 |          9 |         32 |
+| c:\Users\Phil\Desktop\zazie bot\commands\infos\debug.js                  | JavaScript |         11 |          0 |          1 |         12 |
+| c:\Users\Phil\Desktop\zazie bot\commands\infos\invite.js                 | JavaScript |         12 |          0 |          2 |         14 |
+| c:\Users\Phil\Desktop\zazie bot\commands\infos\policy.js                 | JavaScript |         22 |          1 |          9 |         32 |
+| c:\Users\Phil\Desktop\zazie bot\commands\invites\info.js                 | JavaScript |         89 |          1 |          4 |         94 |
+| c:\Users\Phil\Desktop\zazie bot\commands\invites\invites.js              | JavaScript |         69 |          1 |          2 |         72 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\adopt.js               | JavaScript |        218 |          3 |         69 |        290 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\children.js            | JavaScript |         65 |          1 |         35 |        101 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\disown.js              | JavaScript |        452 |          2 |        185 |        639 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\divorce.js             | JavaScript |         80 |          2 |         40 |        122 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\family.js              | JavaScript |        318 |          3 |        149 |        470 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\forcedivorce.js        | JavaScript |         81 |          2 |         34 |        117 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\forcemarry.js          | JavaScript |        100 |          3 |         62 |        165 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\lovecalc.js            | JavaScript |         67 |         22 |         24 |        113 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\marry.js               | JavaScript |        124 |          2 |         54 |        180 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\runaway.js             | JavaScript |         99 |          3 |         50 |        152 |
+| c:\Users\Phil\Desktop\zazie bot\commands\marriage\spouse.js              | JavaScript |         49 |          1 |         30 |         80 |
+| c:\Users\Phil\Desktop\zazie bot\commands\messages\mlb.js                 | JavaScript |        216 |          8 |         39 |        263 |
+| c:\Users\Phil\Desktop\zazie bot\commands\messages\msgs.js                | JavaScript |         43 |          0 |          8 |         51 |
+| c:\Users\Phil\Desktop\zazie bot\commands\messages\wmlb.js                | JavaScript |        216 |          8 |         38 |        262 |
+| c:\Users\Phil\Desktop\zazie bot\commands\moderation\lock.js              | JavaScript |         42 |          0 |          7 |         49 |
+| c:\Users\Phil\Desktop\zazie bot\commands\moderation\purge.js             | JavaScript |         62 |          1 |         19 |         82 |
+| c:\Users\Phil\Desktop\zazie bot\commands\moderation\resetnick.js         | JavaScript |         48 |          5 |          9 |         62 |
+| c:\Users\Phil\Desktop\zazie bot\commands\moderation\role.js              | JavaScript |         81 |          0 |         10 |         91 |
+| c:\Users\Phil\Desktop\zazie bot\commands\moderation\setnick.js           | JavaScript |         68 |          5 |         10 |         83 |
+| c:\Users\Phil\Desktop\zazie bot\commands\moderation\slowmode.js          | JavaScript |         37 |          3 |         12 |         52 |
+| c:\Users\Phil\Desktop\zazie bot\commands\moderation\strike.js            | JavaScript |         49 |          0 |         16 |         65 |
+| c:\Users\Phil\Desktop\zazie bot\commands\moderation\unlock.js            | JavaScript |         42 |          0 |          6 |         48 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\afk.js                  | JavaScript |         43 |          5 |          8 |         56 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\announce.js             | JavaScript |        239 |          0 |          8 |        247 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\avatar.js               | JavaScript |         20 |          0 |          7 |         27 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\banner.js               | JavaScript |         31 |          0 |          5 |         36 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\botinfo.js              | JavaScript |         73 |          0 |         19 |         92 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\commandsused.js         | JavaScript |         15 |          0 |          2 |         17 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\embed.js                | JavaScript |         25 |          0 |          1 |         26 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\id.js                   | JavaScript |         29 |          0 |          7 |         36 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\invites.js              | JavaScript |         21 |          4 |          7 |         32 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\membercount.js          | JavaScript |         17 |          0 |          4 |         21 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\members.js              | JavaScript |         59 |          0 |         22 |         81 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\ping.js                 | JavaScript |         16 |          1 |          1 |         18 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\prefix.js               | JavaScript |         64 |          1 |         18 |         83 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\roleinfo.js             | JavaScript |         31 |          0 |          6 |         37 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\servericon.js           | JavaScript |         19 |          0 |          0 |         19 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\serverinfo.js           | JavaScript |         44 |          0 |         11 |         55 |
+| c:\Users\Phil\Desktop\zazie bot\commands\utility\userinfo.js             | JavaScript |         55 |          0 |         16 |         71 |
+| c:\Users\Phil\Desktop\zazie bot\config.js                                | JavaScript |          8 |          1 |          1 |         10 |
+| c:\Users\Phil\Desktop\zazie bot\config.json                              | JSON       |         11 |          0 |          6 |         17 |
+| c:\Users\Phil\Desktop\zazie bot\config.yml                               | YAML       |          3 |          0 |          0 |          3 |
+| c:\Users\Phil\Desktop\zazie bot\config\bot.js                            | JavaScript |         14 |          0 |          2 |         16 |
+| c:\Users\Phil\Desktop\zazie bot\counts.json                              | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\Phil\Desktop\zazie bot\database\db.js                           | JavaScript |          9 |          0 |          3 |         12 |
+| c:\Users\Phil\Desktop\zazie bot\database\logging.json                    | JSON       |         11 |          0 |          0 |         11 |
+| c:\Users\Phil\Desktop\zazie bot\database\logonoff.json                   | JSON       |          5 |          0 |          0 |          5 |
+| c:\Users\Phil\Desktop\zazie bot\database\moderation.json                 | JSON       |         32 |          0 |          0 |         32 |
+| c:\Users\Phil\Desktop\zazie bot\database\prefix.json                     | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\addinvites.js                   | JavaScript |          0 |        132 |          0 |        132 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\ban.js                          | JavaScript |        173 |          4 |         37 |        214 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\case.js                         | JavaScript |        112 |          4 |         30 |        146 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\currentmutes.js                 | JavaScript |         55 |          4 |         22 |         81 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\disablechannel.js               | JavaScript |        263 |          1 |         80 |        344 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\disableserver.js                | JavaScript |        217 |          1 |         74 |        292 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\duration.js                     | JavaScript |        113 |          4 |         31 |        148 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\enablechannel.js                | JavaScript |        374 |          0 |         97 |        471 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\enableserver.js                 | JavaScript |        202 |          0 |         40 |        242 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\filter.js                       | JavaScript |        183 |          4 |         77 |        264 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\inviterole.js                   | JavaScript |          0 |        180 |          0 |        180 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\kick.js                         | JavaScript |        136 |          4 |         30 |        170 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\level.js                        | JavaScript |          0 |         89 |          0 |         89 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\modlogs.js                      | JavaScript |         99 |          4 |         19 |        122 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\modstats.js                     | JavaScript |        257 |          4 |         69 |        330 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\clear-queue.js            | JavaScript |         17 |          0 |          6 |         23 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\filter.js                 | JavaScript |         25 |          0 |          9 |         34 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\loops.js                  | JavaScript |         31 |          0 |          4 |         35 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\lyrics.js                 | JavaScript |         37 |          0 |         10 |         47 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\nowplaying.js             | JavaScript |         23 |          0 |          8 |         31 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\pause.js                  | JavaScript |         17 |          0 |          5 |         22 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\play.js                   | JavaScript |         24 |          0 |          5 |         29 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\queue.js                  | JavaScript |         29 |          0 |         19 |         48 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\resume.js                 | JavaScript |         17 |          0 |          6 |         23 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\search.js                 | JavaScript |         15 |          0 |          3 |         18 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\shuffle.js                | JavaScript |         16 |          0 |          4 |         20 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\skip.js                   | JavaScript |         16 |          0 |          4 |         20 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\stop.js                   | JavaScript |         17 |          0 |          4 |         21 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\volume.js                 | JavaScript |         18 |          0 |          6 |         24 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\music\w-filters.js              | JavaScript |         31 |          0 |          5 |         36 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\mute.js                         | JavaScript |        137 |          4 |         33 |        174 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\botDisconnect.js         | JavaScript |          3 |          0 |          0 |          3 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\channelEmpty.js          | JavaScript |          3 |          0 |          0 |          3 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\error.js                 | JavaScript |         21 |          0 |          0 |         21 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\noResults.js             | JavaScript |          3 |          0 |          0 |          3 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\playlistAdd.js           | JavaScript |          3 |          0 |          0 |          3 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\queueEnd.js              | JavaScript |          6 |          0 |          0 |          6 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\searchCancel.js          | JavaScript |          3 |          0 |          0 |          3 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\searchInvalidResponse.js | JavaScript |          6 |          0 |          0 |          6 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\searchResults.js         | JavaScript |         11 |          0 |          0 |         11 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\trackAdd.js              | JavaScript |          9 |          1 |          3 |         13 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\player\trackStart.js            | JavaScript |          9 |          1 |          1 |         11 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\ranks.js                        | JavaScript |          0 |         48 |          0 |         48 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\reason.js                       | JavaScript |        125 |          4 |         31 |        160 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\removecase.js                   | JavaScript |         72 |          4 |         24 |        100 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\removeinvites.js                | JavaScript |          0 |        112 |          0 |        112 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\reverse.js                      | JavaScript |         39 |          0 |          3 |         42 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\snipe.js                        | JavaScript |         33 |         50 |         21 |        104 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\unban.js                        | JavaScript |         60 |          4 |         18 |         82 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\unmute.js                       | JavaScript |         59 |          4 |         19 |         82 |
+| c:\Users\Phil\Desktop\zazie bot\dontwork\warn.js                         | JavaScript |        112 |          4 |         29 |        145 |
+| c:\Users\Phil\Desktop\zazie bot\events\guildMemberAdd.js                 | JavaScript |         27 |         27 |         11 |         65 |
+| c:\Users\Phil\Desktop\zazie bot\events\message.js                        | JavaScript |        157 |         53 |         90 |        300 |
+| c:\Users\Phil\Desktop\zazie bot\events\ready.js                          | JavaScript |        893 |         34 |        186 |      1,113 |
+| c:\Users\Phil\Desktop\zazie bot\events\ready1.js                         | JavaScript |         17 |        246 |          4 |        267 |
+| c:\Users\Phil\Desktop\zazie bot\filters.json                             | JSON       |          5 |          0 |          0 |          5 |
+| c:\Users\Phil\Desktop\zazie bot\functions.js                             | JavaScript |        336 |          5 |         19 |        360 |
+| c:\Users\Phil\Desktop\zazie bot\giveaways.json                           | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\Phil\Desktop\zazie bot\giveaways\create.js                      | JavaScript |          0 |        248 |          0 |        248 |
+| c:\Users\Phil\Desktop\zazie bot\giveaways\edit.js                        | JavaScript |          0 |        163 |          0 |        163 |
+| c:\Users\Phil\Desktop\zazie bot\giveaways\end.js                         | JavaScript |          0 |         53 |          0 |         53 |
+| c:\Users\Phil\Desktop\zazie bot\giveaways\ping.js                        | JavaScript |          0 |         29 |          0 |         29 |
+| c:\Users\Phil\Desktop\zazie bot\giveaways\reroll.js                      | JavaScript |          0 |         48 |          0 |         48 |
+| c:\Users\Phil\Desktop\zazie bot\giveaways\start.js                       | JavaScript |          0 |        170 |          0 |        170 |
+| c:\Users\Phil\Desktop\zazie bot\giveaways\stats.js                       | JavaScript |          0 |         43 |          0 |         43 |
+| c:\Users\Phil\Desktop\zazie bot\index.js                                 | JavaScript |      1,719 |      2,245 |        368 |      4,332 |
+| c:\Users\Phil\Desktop\zazie bot\index1.js                                | JavaScript |          5 |          0 |          2 |          7 |
+| c:\Users\Phil\Desktop\zazie bot\members.js                               | JavaScript |          0 |         22 |          0 |         22 |
+| c:\Users\Phil\Desktop\zazie bot\message-counter.js                       | JavaScript |          0 |         31 |          0 |         31 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\ban.js           | JavaScript |          0 |        199 |          0 |        199 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\case.js          | JavaScript |          0 |        143 |          0 |        143 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\currentmutes.js  | JavaScript |          0 |         72 |          0 |         72 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\duration.js      | JavaScript |          0 |        137 |          0 |        137 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\filter.js        | JavaScript |          0 |        257 |          0 |        257 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\kick.js          | JavaScript |          0 |        157 |          0 |        157 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\logging.js       | JavaScript |          0 |         91 |          0 |         91 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\modlogs.js       | JavaScript |          0 |        113 |          0 |        113 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\modstats.js      | JavaScript |          0 |        320 |          0 |        320 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\mute.js          | JavaScript |          0 |        162 |          0 |        162 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\oldmute.js       | JavaScript |          0 |        143 |          0 |        143 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\oldpurge.js      | JavaScript |          0 |        128 |          0 |        128 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\oldunmute.js     | JavaScript |          0 |         73 |          0 |         73 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\oldwarn.js       | JavaScript |          0 |         74 |          0 |         74 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\reason.js        | JavaScript |          0 |        150 |          0 |        150 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\removecase.js    | JavaScript |          0 |         87 |          0 |         87 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\unban.js         | JavaScript |          0 |         70 |          1 |         71 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\unmute.js        | JavaScript |          0 |         67 |          0 |         67 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\voicemove.js     | JavaScript |          0 |         70 |          0 |         70 |
+| c:\Users\Phil\Desktop\zazie bot\moderation(not working)\warn.js          | JavaScript |          0 |         97 |          0 |         97 |
+| c:\Users\Phil\Desktop\zazie bot\mongo.js                                 | JavaScript |          9 |          0 |          1 |         10 |
+| c:\Users\Phil\Desktop\zazie bot\package-lock.json                        | JSON       |     12,679 |          0 |          1 |     12,680 |
+| c:\Users\Phil\Desktop\zazie bot\package.json                             | JSON       |        215 |          0 |          1 |        216 |
+| c:\Users\Phil\Desktop\zazie bot\pendingbans.json                         | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\Phil\Desktop\zazie bot\pendingmutes.json                        | JSON       |          1 |          0 |          0 |          1 |
+| c:\Users\Phil\Desktop\zazie bot\schemas\disabledchannelcats.js           | JavaScript |          6 |          0 |          2 |          8 |
+| c:\Users\Phil\Desktop\zazie bot\schemas\disabledchannels.js              | JavaScript |          6 |          0 |          2 |          8 |
+| c:\Users\Phil\Desktop\zazie bot\schemas\disabledserver.js                | JavaScript |          6 |          0 |          2 |          8 |
+| c:\Users\Phil\Desktop\zazie bot\schemas\disabledservercats.js            | JavaScript |          6 |          0 |          2 |          8 |
+| c:\Users\Phil\Desktop\zazie bot\schemas\message-count-schema.js          | JavaScript |         12 |          2 |          3 |         17 |
+| c:\Users\Phil\Desktop\zazie bot\schemas\welcome-schema.js                | JavaScript |         11 |          0 |          3 |         14 |
+| c:\Users\Phil\Desktop\zazie bot\structures\command.js                    | JavaScript |         10 |          0 |          4 |         14 |
+| c:\Users\Phil\Desktop\zazie bot\structures\event.js                      | JavaScript |         12 |          0 |          2 |         14 |
+| c:\Users\Phil\Desktop\zazie bot\structures\functions.js                  | JavaScript |          7 |          0 |          0 |          7 |
+| Total                                                                    |            |     42,530 |      6,858 |      6,141 |     55,529 |
++--------------------------------------------------------------------------+------------+------------+------------+------------+------------+

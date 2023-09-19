@@ -1,0 +1,5 @@
+{
+    "VSCord.appName": "Visual Studio Code",
+    "discord.detailsEditing": "Editing {file_name} | Solis Bot",
+    "discord.lowerDetailsEditing": "Line {current_line}/{total_lines} | Column {current_column}"
+}

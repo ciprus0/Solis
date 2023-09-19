@@ -1,0 +1,114 @@
+const db = require('quick.db')
+const config1 = require('../../config.js')
+const Discord = require('discord.js')
+module.exports = {
+    name: 'setwelcomechannel',
+    aliases: ['setwelcchannel', 'swc'],
+    category: 'Welcomem',
+    description: 'set the welcome channel for your server',
+    utilisation: '{prefix}setwelcomechannel', 
+
+    async execute(client, message, member) {
+      db.add(`commands_used`, 1)
+      if(!message.member.hasPermission('ADMINISTRATOR')) {
+        return
+    }
+        let embed = new Discord.MessageEmbed()
+        .setAuthor(message.author.username, message.author.displayAvatarURL())
+        .setDescription(`Select Type
+        1️⃣ Join
+        2️⃣ View Current Welcome Channel
+        ❌ Cancel
+        `)
+        .setColor(`2C2F33`)
+        .setFooter( message.guild.name , client.user.displayAvatarURL())
+        .setTimestamp()
+        message.channel.send(embed).then(async react => {
+            react.react('1️⃣')
+            react.react('2️⃣')
+            react.react('❌')
+            const select = react.createReactionCollector((reaction, user) =>
+            reaction.emoji.name === "1️⃣" || "2️⃣" || "❌" &&
+            user.id === message.author.id,
+          {          
+             time: 60000,
+             errors: ['time']
+    });
+          select.on("collect", async (reaction, user) => {
+            if(user.id === client.user.id) return;
+         if(reaction.emoji.name === "1️⃣"){
+    await react.reactions.removeAll()
+    await select.stop()
+    let embedo = new Discord.MessageEmbed()
+    .setAuthor(message.author.username, message.author.displayAvatarURL())
+    .setTitle('Please Mention the channel')
+    .setDescription(`
+    to cancel type "cancel"
+    `)
+    .setColor(`2C2F33`)
+    .setFooter( message.guild.name , client.user.displayAvatarURL())
+    .setTimestamp()
+    react.edit(embedo)
+    let joina = m => m.author.id === message.author.id;
+    let join = new Discord.MessageCollector(message.channel, joina, { max: 1 });
+     
+    join.on('collect', async msg => {
+      if(msg.content.toLowerCase() === "cancel") {
+        msg.channel.send(`Cancelled`)
+        await react.delete()
+        await join.stop()
+     return
+    }
+      let channel = msg.mentions.channels.first() || message.guild.channels.cache.get(msg.content);
+      if(!channel) { msg.channel.send(`Mention a real channel, please.`) 
+    await join.stop()
+    return;
+    }
+     let changed = new Discord.MessageEmbed()
+    .setAuthor(message.author.username, message.author.displayAvatarURL())
+    .setTitle(' ')
+    .setDescription(`
+    Successfully Updated the Welcome Channel`)
+    .setColor(`2C2F33`)
+    .setFooter( message.guild.name , client.user.displayAvatarURL())
+    .setTimestamp()
+     
+    await react.edit(changed)
+    await db.set(`welcome_channel_${message.guild.id}`, channel.id)
+    await join.stop()
+    })
+        }   
+    if(reaction.emoji.name === "2️⃣") {
+      await react.reactions.removeAll()
+    await select.stop()
+    let embed = new Discord.MessageEmbed()
+    .setAuthor(message.author.username, message.author.displayAvatarURL())
+    .setDescription(`
+    Welcome Channel => 
+    ${message.guild.channels.cache.get(db.get(`welcome_channel_${message.guild.id}`)) || "None"}
+    `)
+    .setColor(`2C2F33`) 
+    .setFooter( message.guild.name , client.user.displayAvatarURL())
+    .setTimestamp()
+    return react.edit(embed)
+    }
+     if(reaction.emoji.name === "❌") {
+        await react.reactions.removeAll()
+        await select.stop()
+        let embedo = new Discord.MessageEmbed()
+        .setAuthor(message.author.username, message.author.displayAvatarURL())
+         .setDescription(`
+         Cancelled   
+         `)
+        .setColor(`2C2F33`)
+        .setFooter( message.guild.name , client.user.displayAvatarURL())
+        .setTimestamp()
+      return  react.edit(embedo)
+        }
+     
+    })
+        })        .catch(select => {
+          return message.channel.send(`Timed out.`)
+        })
+    }
+}

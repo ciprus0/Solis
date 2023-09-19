@@ -1,0 +1,815 @@
+if(spouse1.parent2 === '0'){
+    if(spouse1.spouse === '0'){
+        if(spouse1.parent !== '0'){
+            if(spouse1.kidamount === '0'){
+                const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                    .setDescription(`**Parent:** <@${spouse1.parent}>\n`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+            } else if(spouse1.kidamount !== '0'){
+                if(spouse1.kidamount === '3'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                    .setDescription(`**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid1}>, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                } else if(spouse1.kidamount === '2'){
+                    if(spouse1.kid1 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                    .setDescription(`**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid2}> and <@${spouse1.kid3}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                    } else if(spouse1.kid2 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                        .setDescription(`**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid1}> and <@${spouse1.kid3}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    } else if(spouse1.kid3 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                        .setDescription(`**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid1}> and <@${spouse1.kid2}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    }
+                } else if(spouse1.kidamount === '1'){
+                    if(spouse1.kid1 === '0' && spouse1.kid2 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                        .setDescription(`**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid3}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    } else if(spouse1.kid2 === '0' && spouse1.kid3 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                        .setDescription(`**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid1}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    } else if(spouse1.kid1 === '0' && spouse1.kid3 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                        .setDescription(`**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid2}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    }
+                }
+            }
+        } else if(spouse1.parent === '0'){
+            if(spouse1.kidamount === '0'){
+                const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                    .setDescription(``)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+            } else if(spouse1.kidamount !== '0'){
+                if(spouse1.kidamount === '3'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                    .setDescription(`**Children:** <@${spouse1.kid1}>, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                } else if(spouse1.kidamount === '2'){
+                    if(spouse1.kid1 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                    .setDescription(`**Children:** <@${spouse1.kid2}> and <@${spouse1.kid3}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                    } else if(spouse1.kid2 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                        .setDescription(`**Children:** <@${spouse1.kid1}> and <@${spouse1.kid3}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    } else if(spouse1.kid3 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                        .setDescription(`**Children:** <@${spouse1.kid1}> and <@${spouse1.kid2}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    }
+                } else if(spouse1.kidamount === '1'){
+                    if(spouse1.kid1 === '0' && spouse1.kid2 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                        .setDescription(`**Children:** <@${spouse1.kid3}>`)
+                        .setColor(0x2C2F33)
+                        
+                        return message.inlineReply(embed)
+                    } else if(spouse1.kid2 === '0' && spouse1.kid3 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                        .setDescription(`**Children:** <@${spouse1.kid1}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    } else if(spouse1.kid1 === '0' && spouse1.kid3 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                        .setDescription(`**Children:** <@${spouse1.kid2}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    }
+                
+                }}}
+    
+            } else if(spouse1.spouse !== '0'){
+                let spouse2;
+
+                await db.promise().query('SELECT * FROM marriage WHERE user_id = ?', [spouse1.spouse]).then(result => {
+                    spouse2 = result[0][0]
+                  
+                  })
+                  
+                  if(!spouse2) {
+                  
+                    db.query(`INSERT INTO marriage (user_id) VALUES(?)`, [spouse1.spouse]);
+                  return message.inlineReply(`<@${spouse1.spouse}> was not in the database`)
+                  }
+
+                if(spouse1.parent !== '0'){
+                    if(spouse1.kidamount === '0'){
+                        if(spouse2.kidamount === '0'){
+                        const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        } else if(spouse2.kidamount === '1'){
+                            if(spouse2.kid1 === '0' && spouse2.kid2 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid3}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            } else if(spouse2.kid2 === '0' && spouse2.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid1}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            } else if(spouse2.kid1 === '0' && spouse2.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid2}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            }
+                        } else if(spouse2.kidamount === '2'){
+                            if(spouse2.kid1 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid2}> and <@${spouse2.kid3}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                                } else if(spouse2.kid2 === '0'){
+                                    const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid1}> and <@${spouse2.kid3}>`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                                } else if(spouse2.kid3 === '0'){
+                                    const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid1}> and <@${spouse2.kid2}>`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                                }
+                        } else if(spouse2.kidamount === '3'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid1}>, <@${spouse2.kid2}>, and <@${spouse2.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        }
+                    } else if(spouse1.kidamount !== '0'){
+                        if(spouse1.kidamount === '3'){
+                            if(spouse2.kidamount === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid1}>, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                            } else if(spouse2.kidamount === '1'){
+                                if(spouse2.kid1 === '0' && spouse2.kid2 === '0'){
+                                    const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid3}>, <@${spouse1.kid1}>, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                                } else if(spouse2.kid2 === '0' && spouse2.kid3 === '0'){
+                                    const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid1}>, <@${spouse1.kid1}>, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                                } else if(spouse2.kid1 === '0' && spouse2.kid3 === '0'){
+                                    const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid2}>, <@${spouse1.kid1}>, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                                }
+                            } else if(spouse2.kidamount === '2'){
+                                if(spouse1.kid1 === '0'){
+                                    const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid2}>, <@${spouse2.kid3}>, <@${spouse1.kid1}, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                                    } else if(spouse1.kid2 === '0'){
+                                        const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid1}>, <@${spouse2.kid3}>, <@${spouse1.kid1}, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                                    } else if(spouse1.kid3 === '0'){
+                                        const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid1}>, <@${spouse2.kid2}>, <@${spouse1.kid1}, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                                    }
+                            } else if(spouse2.kidamount === '3'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse2.kid1}, <@${spouse2.kid2}>, <@${spouse2.kid3}>, <@${spouse1.kid1}>, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            }
+                        } else if(spouse1.kidamount === '2'){
+                            if(spouse1.kid1 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid2}> and <@${spouse1.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                            } else if(spouse1.kid2 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid1}> and <@${spouse1.kid3}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            } else if(spouse1.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid1}> and <@${spouse1.kid2}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            }
+                        } else if(spouse1.kidamount === '1'){
+                            if(spouse1.kid1 === '0' && spouse1.kid2 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid3}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            } else if(spouse1.kid2 === '0' && spouse1.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid1}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            } else if(spouse1.kid1 === '0' && spouse1.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parent:** <@${spouse1.parent}>\n**Children:** <@${spouse1.kid2}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            }
+                        }
+                    }
+                } else if(spouse1.parent === '0'){
+                    if(spouse1.kidamount === '0'){
+                        const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse1.spouse}>\n`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                    } else if(spouse1.kidamount !== '0'){
+                        if(spouse1.kidamount === '3'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Children:** <@${spouse1.kid1}>, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        } else if(spouse1.kidamount === '2'){
+                            if(spouse1.kid1 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Children:** <@${spouse1.kid2}> and <@${spouse1.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                            } else if(spouse1.kid2 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Children:** <@${spouse1.kid1}> and <@${spouse1.kid3}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            } else if(spouse1.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Children:** <@${spouse1.kid1}> and <@${spouse1.kid2}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            }
+                        } else if(spouse1.kidamount === '1'){
+                            if(spouse1.kid1 === '0' && spouse1.kid2 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Children:** <@${spouse1.kid3}>`)
+                                .setColor(0x2C2F33)
+                                
+                                return message.inlineReply(embed)
+                            } else if(spouse1.kid2 === '0' && spouse1.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Children:** <@${spouse1.kid1}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            } else if(spouse1.kid1 === '0' && spouse1.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Children:** <@${spouse1.kid2}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            }
+                        
+                        }}}
+            }
+    
+    
+    
+    
+    
+    
+        } else if (spouse1.parent2 !== '0'){
+            if(spouse1.spouse === '0'){
+                if(spouse1.parent !== '0'){
+                    if(spouse1.kidamount === '0'){
+                        const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                            .setDescription(`**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                    } else if(spouse1.kidamount !== '0'){
+                        if(spouse1.kidamount === '3'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                            .setDescription(`**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid1}>, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        } else if(spouse1.kidamount === '2'){
+                            if(spouse1.kid1 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                            .setDescription(`**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid2}> and <@${spouse1.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                            } else if(spouse1.kid2 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid1}> and <@${spouse1.kid3}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            } else if(spouse1.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid1}> and <@${spouse1.kid2}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            }
+                        } else if(spouse1.kidamount === '1'){
+                            if(spouse1.kid1 === '0' && spouse1.kid2 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid3}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            } else if(spouse1.kid2 === '0' && spouse1.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid1}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            } else if(spouse1.kid1 === '0' && spouse1.kid3 === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                .setDescription(`**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid2}>`)
+                                .setColor(0x2C2F33)
+                                return message.inlineReply(embed)
+                            }
+                        }
+                    }
+                }
+            
+                    } else if(spouse1.spouse !== '0'){
+                        if(spouse1.parent !== '0'){
+                            if(spouse1.kidamount === '0'){
+                                const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                            } else if(spouse1.kidamount !== '0'){
+                                if(spouse1.kidamount === '3'){
+                                    const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid1}>, <@${spouse1.kid2}>, and <@${spouse1.kid3}>`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                                } else if(spouse1.kidamount === '2'){
+                                    if(spouse1.kid1 === '0'){
+                                    const embed = new Discord.MessageEmbed()
+                                    .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                    .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid2}> and <@${spouse1.kid3}>`)
+                                    .setColor(0x2C2F33)
+                                    return message.inlineReply(embed)
+                                    } else if(spouse1.kid2 === '0'){
+                                        const embed = new Discord.MessageEmbed()
+                                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                        .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid1}> and <@${spouse1.kid3}>`)
+                                        .setColor(0x2C2F33)
+                                        return message.inlineReply(embed)
+                                    } else if(spouse1.kid3 === '0'){
+                                        const embed = new Discord.MessageEmbed()
+                                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                        .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid1}> and <@${spouse1.kid2}>`)
+                                        .setColor(0x2C2F33)
+                                        return message.inlineReply(embed)
+                                    }
+                                } else if(spouse1.kidamount === '1'){
+                                    if(spouse1.kid1 === '0' && spouse1.kid2 === '0'){
+                                        const embed = new Discord.MessageEmbed()
+                                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                        .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid3}>`)
+                                        .setColor(0x2C2F33)
+                                        return message.inlineReply(embed)
+                                    } else if(spouse1.kid2 === '0' && spouse1.kid3 === '0'){
+                                        const embed = new Discord.MessageEmbed()
+                                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                        .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid1}>`)
+                                        .setColor(0x2C2F33)
+                                        return message.inlineReply(embed)
+                                    } else if(spouse1.kid1 === '0' && spouse1.kid3 === '0'){
+                                        const embed = new Discord.MessageEmbed()
+                                        .setAuthor('Family Tree', personTagged.user.displayAvatarURL())
+                                        .setDescription(`**Spouse:** <@${spouse1.spouse}>\n**Parents:** <@${spouse1.parent}> and <@${spouse1.parent2}>\n**Children:** <@${spouse1.kid2}>`)
+                                        .setColor(0x2C2F33)
+                                        return message.inlineReply(embed)
+                                    }
+                                }
+                            }
+                        } 
+                    }
+            
+        }
+}  else if(spouse12.parent2 === '0'){
+         if(spouse12.spouse === '0'){
+     if(spouse12.parent !== '0'){
+        if(spouse12.kidamount === '0'){
+            const embed = new Discord.MessageEmbed()
+                .setAuthor('Family Tree', message.author.displayAvatarURL())
+                .setDescription(`**Parent:** <@${spouse12.parent}>\n`)
+                .setColor(0x2C2F33)
+               return message.inlineReply(embed)
+        } else if(spouse12.kidamount !== '0'){
+            if(spouse12.kidamount === '3'){
+                const embed = new Discord.MessageEmbed()
+                .setAuthor('Family Tree', message.author.displayAvatarURL())
+                .setDescription(`**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid1}>, <@${spouse12.kid2}>, and <@${spouse12.kid3}>`)
+                .setColor(0x2C2F33)
+                return message.inlineReply(embed)
+            } else if(spouse12.kidamount === '2'){
+                if(spouse12.kid1 === '0'){
+                const embed = new Discord.MessageEmbed()
+                .setAuthor('Family Tree', message.author.displayAvatarURL())
+                .setDescription(`**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid2}> and <@${spouse12.kid3}>`)
+                .setColor(0x2C2F33)
+                return message.inlineReply(embed)
+                } else if(spouse12.kid2 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', message.author.displayAvatarURL())
+                    .setDescription(`**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid1}> and <@${spouse12.kid3}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                } else if(spouse12.kid3 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', message.author.displayAvatarURL())
+                    .setDescription(`**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid1}> and <@${spouse12.kid2}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                }
+            } else if(spouse12.kidamount === '1'){
+                if(spouse12.kid1 === '0' && spouse12.kid2 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', message.author.displayAvatarURL())
+                    .setDescription(`**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid3}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                } else if(spouse12.kid2 === '0' && spouse12.kid3 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', message.author.displayAvatarURL())
+                    .setDescription(`**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid1}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                } else if(spouse12.kid1 === '0' && spouse12.kid3 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', message.author.displayAvatarURL())
+                    .setDescription(`**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid2}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                }
+            }
+        }
+    } else if(spouse12.parent === '0'){
+        if(spouse12.kidamount === '0'){
+            const embed = new Discord.MessageEmbed()
+                .setAuthor('Family Tree', message.author.displayAvatarURL())
+                .setDescription(``)
+                .setColor(0x2C2F33)
+                return message.inlineReply(embed)
+        } else if(spouse12.kidamount !== '0'){
+            if(spouse12.kidamount === '3'){
+                const embed = new Discord.MessageEmbed()
+                .setAuthor('Family Tree', message.author.displayAvatarURL())
+                .setDescription(`**Children:** <@${spouse12.kid1}>, <@${spouse12.kid2}>, and <@${spouse12.kid3}>`)
+                .setColor(0x2C2F33)
+                return message.inlineReply(embed)
+            } else if(spouse12.kidamount === '2'){
+                if(spouse12.kid1 === '0'){
+                const embed = new Discord.MessageEmbed()
+                .setAuthor('Family Tree', message.author.displayAvatarURL())
+                .setDescription(`**Children:** <@${spouse12.kid2}> and <@${spouse12.kid3}>`)
+                .setColor(0x2C2F33)
+                return message.inlineReply(embed)
+                } else if(spouse12.kid2 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', message.author.displayAvatarURL())
+                    .setDescription(`**Children:** <@${spouse12.kid1}> and <@${spouse12.kid3}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                } else if(spouse12.kid3 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', message.author.displayAvatarURL())
+                    .setDescription(`**Children:** <@${spouse12.kid1}> and <@${spouse12.kid2}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                }
+            } else if(spouse12.kidamount === '1'){
+                if(spouse12.kid1 === '0' && spouse12.kid2 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', message.author.displayAvatarURL())
+                    .setDescription(`**Children:** <@${spouse1.kid3}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                } else if(spouse12.kid2 === '0' && spouse12.kid3 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', message.author.displayAvatarURL())
+                    .setDescription(`**Children:** <@${spouse12.kid1}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                } else if(spouse12.kid1 === '0' && spouse12.kid3 === '0'){
+                    const embed = new Discord.MessageEmbed()
+                    .setAuthor('Family Tree', message.author.displayAvatarURL())
+                    .setDescription(`**Children:** <@${spouse12.kid2}>`)
+                    .setColor(0x2C2F33)
+                    return message.inlineReply(embed)
+                }
+            
+            }}}
+        } else if(spouse12.spouse !== '0'){
+            if(spouse12.parent !== '0'){
+                if(spouse12.kidamount === '0'){
+                    const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', message.author.displayAvatarURL())
+                        .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parent:** <@${spouse12.parent}>\n`)
+                        .setColor(0x2C2F33)
+                       return message.inlineReply(embed)
+                } else if(spouse12.kidamount !== '0'){
+                    if(spouse12.kidamount === '3'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', message.author.displayAvatarURL())
+                        .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid1}>, <@${spouse12.kid2}>, and <@${spouse12.kid3}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    } else if(spouse12.kidamount === '2'){
+                        if(spouse12.kid1 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', message.author.displayAvatarURL())
+                        .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid2}> and <@${spouse12.kid3}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                        } else if(spouse12.kid2 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', message.author.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid1}> and <@${spouse12.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        } else if(spouse12.kid3 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', message.author.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid1}> and <@${spouse12.kid2}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        }
+                    } else if(spouse12.kidamount === '1'){
+                        if(spouse12.kid1 === '0' && spouse12.kid2 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', message.author.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        } else if(spouse12.kid2 === '0' && spouse12.kid3 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', message.author.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid1}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        } else if(spouse12.kid1 === '0' && spouse12.kid3 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', message.author.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parent:** <@${spouse12.parent}>\n**Children:** <@${spouse12.kid2}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        }
+                    }
+                }
+            } else if(spouse12.parent === '0'){
+                if(spouse12.kidamount === '0'){
+                    const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', message.author.displayAvatarURL())
+                        .setDescription(`**Spouse:** <@${spouse12.spouse}>\n`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                } else if(spouse12.kidamount !== '0'){
+                    if(spouse12.kidamount === '3'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', message.author.displayAvatarURL())
+                        .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Children:** <@${spouse12.kid1}>, <@${spouse12.kid2}>, and <@${spouse12.kid3}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                    } else if(spouse12.kidamount === '2'){
+                        if(spouse12.kid1 === '0'){
+                        const embed = new Discord.MessageEmbed()
+                        .setAuthor('Family Tree', message.author.displayAvatarURL())
+                        .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Children:** <@${spouse12.kid2}> and <@${spouse12.kid3}>`)
+                        .setColor(0x2C2F33)
+                        return message.inlineReply(embed)
+                        } else if(spouse12.kid2 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', message.author.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Children:** <@${spouse12.kid1}> and <@${spouse12.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        } else if(spouse12.kid3 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', message.author.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Children:** <@${spouse12.kid1}> and <@${spouse12.kid2}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        }
+                    } else if(spouse12.kidamount === '1'){
+                        if(spouse12.kid1 === '0' && spouse12.kid2 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', message.author.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Children:** <@${spouse1.kid3}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        } else if(spouse12.kid2 === '0' && spouse12.kid3 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', message.author.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Children:** <@${spouse12.kid1}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        } else if(spouse12.kid1 === '0' && spouse12.kid3 === '0'){
+                            const embed = new Discord.MessageEmbed()
+                            .setAuthor('Family Tree', message.author.displayAvatarURL())
+                            .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Children:** <@${spouse12.kid2}>`)
+                            .setColor(0x2C2F33)
+                            return message.inlineReply(embed)
+                        }
+                    
+                    }}}
+        }}
+
+        else if(spouse12.parent2 !== '0'){
+
+            if(spouse12.spouse === '0'){
+                if(spouse12.parent !== '0'){
+                   if(spouse12.kidamount === '0'){
+                       const embed = new Discord.MessageEmbed()
+                           .setAuthor('Family Tree', message.author.displayAvatarURL())
+                           .setDescription(`**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n`)
+                           .setColor(0x2C2F33)
+                          return message.inlineReply(embed)
+                   } else if(spouse12.kidamount !== '0'){
+                       if(spouse12.kidamount === '3'){
+                           const embed = new Discord.MessageEmbed()
+                           .setAuthor('Family Tree', message.author.displayAvatarURL())
+                           .setDescription(`**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid1}>, <@${spouse12.kid2}>, and <@${spouse12.kid3}>`)
+                           .setColor(0x2C2F33)
+                           return message.inlineReply(embed)
+                       } else if(spouse12.kidamount === '2'){
+                           if(spouse12.kid1 === '0'){
+                           const embed = new Discord.MessageEmbed()
+                           .setAuthor('Family Tree', message.author.displayAvatarURL())
+                           .setDescription(`**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid2}> and <@${spouse12.kid3}>`)
+                           .setColor(0x2C2F33)
+                           return message.inlineReply(embed)
+                           } else if(spouse12.kid2 === '0'){
+                               const embed = new Discord.MessageEmbed()
+                               .setAuthor('Family Tree', message.author.displayAvatarURL())
+                               .setDescription(`**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid1}> and <@${spouse12.kid3}>`)
+                               .setColor(0x2C2F33)
+                               return message.inlineReply(embed)
+                           } else if(spouse12.kid3 === '0'){
+                               const embed = new Discord.MessageEmbed()
+                               .setAuthor('Family Tree', message.author.displayAvatarURL())
+                               .setDescription(`**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid1}> and <@${spouse12.kid2}>`)
+                               .setColor(0x2C2F33)
+                               return message.inlineReply(embed)
+                           }
+                       } else if(spouse12.kidamount === '1'){
+                           if(spouse12.kid1 === '0' && spouse12.kid2 === '0'){
+                               const embed = new Discord.MessageEmbed()
+                               .setAuthor('Family Tree', message.author.displayAvatarURL())
+                               .setDescription(`**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid3}>`)
+                               .setColor(0x2C2F33)
+                               return message.inlineReply(embed)
+                           } else if(spouse12.kid2 === '0' && spouse12.kid3 === '0'){
+                               const embed = new Discord.MessageEmbed()
+                               .setAuthor('Family Tree', message.author.displayAvatarURL())
+                               .setDescription(`**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid1}>`)
+                               .setColor(0x2C2F33)
+                               return message.inlineReply(embed)
+                           } else if(spouse12.kid1 === '0' && spouse12.kid3 === '0'){
+                               const embed = new Discord.MessageEmbed()
+                               .setAuthor('Family Tree', message.author.displayAvatarURL())
+                               .setDescription(`**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid2}>`)
+                               .setColor(0x2C2F33)
+                               return message.inlineReply(embed)
+                           }
+                       }
+                   }
+               } 
+                   } else if(spouse12.spouse !== '0'){
+                       if(spouse12.parent !== '0'){
+                           if(spouse12.kidamount === '0'){
+                               const embed = new Discord.MessageEmbed()
+                                   .setAuthor('Family Tree', message.author.displayAvatarURL())
+                                   .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n`)
+                                   .setColor(0x2C2F33)
+                                  return message.inlineReply(embed)
+                           } else if(spouse12.kidamount !== '0'){
+                               if(spouse12.kidamount === '3'){
+                                   const embed = new Discord.MessageEmbed()
+                                   .setAuthor('Family Tree', message.author.displayAvatarURL())
+                                   .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid1}>, <@${spouse12.kid2}>, and <@${spouse12.kid3}>`)
+                                   .setColor(0x2C2F33)
+                                   return message.inlineReply(embed)
+                               } else if(spouse12.kidamount === '2'){
+                                   if(spouse12.kid1 === '0'){
+                                   const embed = new Discord.MessageEmbed()
+                                   .setAuthor('Family Tree', message.author.displayAvatarURL())
+                                   .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid2}> and <@${spouse12.kid3}>`)
+                                   .setColor(0x2C2F33)
+                                   return message.inlineReply(embed)
+                                   } else if(spouse12.kid2 === '0'){
+                                       const embed = new Discord.MessageEmbed()
+                                       .setAuthor('Family Tree', message.author.displayAvatarURL())
+                                       .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid1}> and <@${spouse12.kid3}>`)
+                                       .setColor(0x2C2F33)
+                                       return message.inlineReply(embed)
+                                   } else if(spouse12.kid3 === '0'){
+                                       const embed = new Discord.MessageEmbed()
+                                       .setAuthor('Family Tree', message.author.displayAvatarURL())
+                                       .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid1}> and <@${spouse12.kid2}>`)
+                                       .setColor(0x2C2F33)
+                                       return message.inlineReply(embed)
+                                   }
+                               } else if(spouse12.kidamount === '1'){
+                                   if(spouse12.kid1 === '0' && spouse12.kid2 === '0'){
+                                       const embed = new Discord.MessageEmbed()
+                                       .setAuthor('Family Tree', message.author.displayAvatarURL())
+                                       .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid3}>`)
+                                       .setColor(0x2C2F33)
+                                       return message.inlineReply(embed)
+                                   } else if(spouse12.kid2 === '0' && spouse12.kid3 === '0'){
+                                       const embed = new Discord.MessageEmbed()
+                                       .setAuthor('Family Tree', message.author.displayAvatarURL())
+                                       .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid1}>`)
+                                       .setColor(0x2C2F33)
+                                       return message.inlineReply(embed)
+                                   } else if(spouse12.kid1 === '0' && spouse12.kid3 === '0'){
+                                       const embed = new Discord.MessageEmbed()
+                                       .setAuthor('Family Tree', message.author.displayAvatarURL())
+                                       .setDescription(`**Spouse:** <@${spouse12.spouse}>\n**Parents:** <@${spouse12.parent}> and <@${spouse12.parent2}>\n**Children:** <@${spouse12.kid2}>`)
+                                       .setColor(0x2C2F33)
+                                       return message.inlineReply(embed)
+                                   }
+                               }
+                           }
+                       } 
+                   }}

@@ -1,0 +1,16 @@
+{
+    
+
+    "mongoPath": "mongodb+srv://localhost:27017@cluster0.pynkp.mongodb.net/discordbot?retryWrites=true&w=majority",
+    "ytkey": "AIzaSyClqXHDOK0zK7D0XyAChzFugRJiApaRCp0",
+    "homeGuildID": "702885600436682786",
+    "logChannelName": "solis-logs",
+    "msgChannelName": "message-logs",
+    "dmChannelName": "dm-logs",
+    "ownerID": "285528911545106432",
+    "everyoneMention": false,
+    "hostedBy": true
+
+
+  }
+

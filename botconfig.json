@@ -1,0 +1,97 @@
+{
+    "serverID": "901960670843645992",
+
+    "General_Commands_Staff_Only": false,
+
+    "General_Commands_Blacklisted_Channels": [""],
+
+    "staffRoles": ["901960671191793681", "901960671229534209", "901960671229534213", "901960671229534211", "901960671229534210"],
+
+    "Filter_Command_Roles": [],
+
+    "Slowmode_Command_Roles": [],
+
+    "Ban_Command_Roles": ["901960671229534211", "901960671229534210", "901960671229534213", "901960671229534209"],
+
+    "Kick_Command_Roles": ["901960671229534211", "901960671229534210", "901960671229534213", "901960671229534209", "901960671208538167"],
+
+    "Automod_Enable": false,
+
+    "Automod_Bypass_Roles": [""],
+
+    "Automod_Bypass_Channels": [""],
+
+    "Words_Filter_Automod_Enable": false,
+
+    "Words_Filter_Bypass_Roles": [""],
+
+    "Words_Filter_Bypass_Channels": [""],
+
+    "Invite_Links_Filter_Automod_Enable": false,
+
+    "Invite_Links_Filter_Bypass_Roles": [""],
+
+    "Invite_Links_Filter_Bypass_Channels": [""],
+
+    "Links_Filter_Automod_Enable": false,
+
+    "Links_Filter_Bypass_Roles": [""],
+
+    "Links_Filter_Bypass_Channels": [""],
+
+    "Duplicate_Text_Automod_Enable": false,
+
+    "Duplicate_Text_Bypass_Roles": [""],
+
+    "Duplicate_Text_Bypass_Channels": [""],
+
+    "Line_Breaks_Automod_Enable": false,
+
+    "Line_Breaks_Automod_Trigger": 7,
+
+    "Line_Breaks_Bypass_Roles": [""],
+
+    "Line_Breaks_Bypass_Channels": [""],
+
+    "Emojis_Limit_Automod_Enable": false,
+
+    "Emojis_Limit_Automod_Trigger": 5,
+
+    "Emojis_Limit_Bypass_Roles": [""],
+
+    "Emojis_Limit_Bypass_Channels": [""],
+
+    "Caps_Limit_Automod_Enable": false,
+
+    "Caps_Limit_Bypass_Roles": [""],
+
+    "Caps_Limit_Bypass_Channels": [""],
+
+    "Fast_Message_Spam_Automod_Enable": false,
+
+    "Fast_Message_Spam_Bypass_Roles": [""],
+
+    "Fast_Message_Spam_Bypass_Channels": [""],
+
+    "Auto_Mute_Enable": false,
+
+    "Auto_Mute_Duration": 1800000,
+
+    "Server_Logs_Enable": false,
+
+    "Message_Logs_Enable": false,
+
+    "Message_Logs_Ignore_Channels": [""],
+
+    "Reaction_Logs_Enable": false,
+
+    "Server_Logs_Channel": "",
+
+    "Message_Logs_Channel": "",
+
+    "Automod_Logs_Channel": "",
+
+    "Moderation_Logs_Channel": "901960672785616898",
+
+    "Muted_Role": "901960671191793680"
+}
